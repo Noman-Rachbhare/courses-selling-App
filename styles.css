@@ -1,9 +1,12 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
+}
+body {
+    overflow:auto;
+    scroll-behavior: smooth;
 }
 
 #home {
@@ -171,10 +174,13 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     /* Header */
     .nav-links {
         gap: 15px;
+    }
+    #home{
+        flex-direction: column;
     }
 
     /* Courses Section */
@@ -196,12 +202,8 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 780px) {
     /* Header */
-    .logo {
-        font-size: 1.2rem;
-    }
-
     /* Home Section */
     #home p {
         font-size: 18px;
